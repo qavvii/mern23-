@@ -15,3 +15,11 @@ Cors: Middleware to enable Cross-Origin Resource Sharing (CORS), which is necess
 React: A JavaScript library for building user interfaces, particularly single-page applications, using a component-based architecture.
 
 Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine. It's used for building the back-end of MERN applications.
+![image](https://github.com/user-attachments/assets/11c170f8-a67d-4158-85b7-2847c1e2c01e)
+![image](https://github.com/user-attachments/assets/120c4848-ac70-4e57-bd95-baa5e3f4f0f8)
+![image](https://github.com/user-attachments/assets/76a47037-acf1-4fa5-a6ca-42e025520df1)
+![image](https://github.com/user-attachments/assets/5597a3d2-c099-42d5-a4aa-a46b7246e5e1)
+![image](https://github.com/user-attachments/assets/292c386e-905b-4c62-aecd-7c17755283ad)
+if invalid route 
+![image](https://github.com/user-attachments/assets/b62f3b72-3296-4024-8530-6dad83a08a1a)
+
