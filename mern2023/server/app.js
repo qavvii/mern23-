@@ -1,43 +1,15 @@
 const dotenv = require("dotenv");
 const express = require("express");
+const User = require("./model/userSchema");
 const app = express();
-const mongoose = require("mongoose");
-
+app.use(express.json());
 require("dotenv").config();
+require("./db/conn"); //connection database
 
-const DB = process.env.DATABASE;
+app.use(require("./router/auth.js"));
 
-mongoose
-  .connect(DB)
-  .then(() => {
-    console.log("connection is successfull");
-  })
-  .catch((err) => console.log("no connection"));
+const PORT = process.env.PORT;
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Home Page!");
-});
-
-// Define the about route
-app.get("/about", (req, res) => {
-  res.send("About Us");
-});
-
-// Define the contact route
-app.get("/contact", (req, res) => {
-  res.send("Contact Us");
-});
-
-// Signin route
-app.get("/signin", (req, res) => {
-  res.send("Signin  logic");
-});
-
-// Signup route
-app.get("/signup", (req, res) => {
-  res.send("Signup logic");
-});
-
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`server is running at port no `);
 });
